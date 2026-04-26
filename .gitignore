@@ -1,0 +1,14 @@
+# Models and large binaries (ignore local weights)
+models/
+*.bin
+*.gguf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment secrets
+.env
+
+# Docker logs
+logs/

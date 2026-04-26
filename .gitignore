@@ -2,6 +2,9 @@
 models/
 *.bin
 *.gguf
+*.safetensors
+*.pt
+*.pth
 
 # OS files
 .DS_Store
@@ -10,5 +13,18 @@ Thumbs.db
 # Environment secrets
 .env
 
-# Docker logs
+# Docker and logs
 logs/
+*.log
+n8n_data/
+
+# Python and Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+unsloth_compiled_cache/
+
+# Lab specific ignores
+labs/lab2-rag/storage/
+labs/lab5-finetuning/outputs/
+labs/lab5-finetuning/.cache/

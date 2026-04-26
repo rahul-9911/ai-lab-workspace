@@ -3,7 +3,9 @@
   "nodes": [
     {
       "parameters": {
-        "options": {}
+        "options": {
+          "allowFileUploads": true
+        }
       },
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.4,
@@ -62,7 +64,7 @@
       "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
       "typeVersion": 1.3,
       "position": [
-        336,
+        208,
         -64
       ],
       "id": "f81e3e47-688e-42b5-bda6-86def5e60747",
@@ -81,7 +83,7 @@
       "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
       "typeVersion": 1,
       "position": [
-        336,
+        224,
         112
       ],
       "id": "9b0661b4-2861-44ee-a764-c6ad7425faae",
@@ -98,7 +100,7 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        64,
+        32,
         -64
       ],
       "id": "2ca83e61-1a04-4b2d-93a8-b41853fba03f",
@@ -168,7 +170,7 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "8b012fe0-87e9-4312-980b-d9c459b3a8b4",
+  "versionId": "fe88ed82-38e8-4455-99fe-f2811933558f",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "294927bc68bb8a3d2e6770097aaf831512d752307e8f9c364f0599b4564aa1e0"

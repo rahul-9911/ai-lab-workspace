@@ -8,8 +8,8 @@
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.4,
       "position": [
-        -336,
-        -16
+        -240,
+        -320
       ],
       "id": "696bd50d-33ad-4555-b707-4a1bba60fbc6",
       "name": "When chat message received",
@@ -23,8 +23,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
       "typeVersion": 1,
       "position": [
-        -96,
-        112
+        -256,
+        -96
       ],
       "id": "d325824a-3851-4195-84b9-37159b063cb8",
       "name": "Ollama Chat Model",
@@ -42,8 +42,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3.1,
       "position": [
-        -96,
-        -192
+        -32,
+        -320
       ],
       "id": "3fd8172a-bd10-40ea-8117-2533fd95c2f6",
       "name": "AI Agent"
@@ -62,8 +62,8 @@
       "type": "@n8n/n8n-nodes-langchain.vectorStoreQdrant",
       "typeVersion": 1.3,
       "position": [
-        224,
-        -176
+        336,
+        -64
       ],
       "id": "f81e3e47-688e-42b5-bda6-86def5e60747",
       "name": "Qdrant Vector Store",
@@ -81,7 +81,7 @@
       "type": "@n8n/n8n-nodes-langchain.embeddingsOllama",
       "typeVersion": 1,
       "position": [
-        224,
+        336,
         112
       ],
       "id": "9b0661b4-2861-44ee-a764-c6ad7425faae",
@@ -92,6 +92,17 @@
           "name": "Ollama account"
         }
       }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        64,
+        -64
+      ],
+      "id": "2ca83e61-1a04-4b2d-93a8-b41853fba03f",
+      "name": "Simple Memory"
     }
   ],
   "pinData": {},
@@ -139,6 +150,17 @@
           }
         ]
       ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": false,
@@ -146,7 +168,7 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "90a4a61e-8fa4-4c45-a99a-2a88fe6beac7",
+  "versionId": "8b012fe0-87e9-4312-980b-d9c459b3a8b4",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "294927bc68bb8a3d2e6770097aaf831512d752307e8f9c364f0599b4564aa1e0"

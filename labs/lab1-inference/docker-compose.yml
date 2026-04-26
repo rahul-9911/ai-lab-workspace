@@ -6,6 +6,8 @@ services:
       - "11434:11434"
     volumes:
       - ../../models:/root/.ollama
+    networks:
+      - ai-network
     deploy:
       resources:
         reservations:
@@ -14,3 +16,7 @@ services:
               count: 1
               capabilities: [gpu]
     restart: unless-stopped
+
+networks:
+  ai-network:
+    external: true

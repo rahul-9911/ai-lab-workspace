@@ -15,3 +15,12 @@ This lab implements the "Central Nervous System" of the lab using **n8n**. It or
 ## Connection Strings
 - **Ollama API:** `http://ollama:11434`
 - **Qdrant API:** `http://qdrant:6333`
+
+## Setup & Usage
+1. **Start n8n:** `docker compose up -d`
+2. **Access UI:** Open `http://localhost:5678`
+3. **Import Workflow:** 
+   - Create a new workflow.
+   - Click the menu (three dots) -> **Import from File**.
+   - Select `workflows/Agentic_RAG_Gemma4.json`.
+4. **Configure Credentials:** Ensure the Ollama and Qdrant nodes are pointing to the correct internal container URLs listed above.

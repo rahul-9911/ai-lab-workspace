@@ -14,5 +14,11 @@ This capstone lab demonstrates how to specialize a general-purpose model for a s
 3.  **Kernel Shortcuts:** Used Unsloth's hand-written kernels to reduce VRAM usage by 70%.
 4.  **Export:** Saved the LoRA adapter for deployment in Ollama or other inference engines.
 
+## Setup & Usage
+1. **Launch Environment:** `docker compose up -d`
+2. **Access Jupyter:** Open `http://localhost:8888` in your browser.
+3. **Authentication:** Use token `ai_lab_2026`.
+4. **Run Training:** Open `Gemma4_Finetune.ipynb` and execute the cells.
+
 ## Key Learning
 Demonstrated the ability to handle "bleeding-edge" architecture conflicts between Trimodal Processors and Text-based Tokenizers—a common challenge in early 2026 AI engineering.
